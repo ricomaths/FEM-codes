@@ -1,0 +1,4 @@
+function R = change_basis(theta_degrees)
+    R = zeros(4,4);
+    R = [cosd(theta_degrees),cosd(90+theta_degrees),0,0;cosd(90-theta_degrees),cosd(theta_degrees),0,0;0,0,cosd(theta_degrees),cosd(90+theta_degrees);0,0,cosd(90-theta_degrees),cosd(theta_degrees)];
+end
